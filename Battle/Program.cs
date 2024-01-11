@@ -19,13 +19,13 @@ class Program
     {
         Console.WriteLine();
         Console.Write("Please enter column: ");
-        Column = Convert.ToInt32(Console.ReadLine());
+        Column = Convert.ToInt32(Console.ReadLine());//exception for strings
         Console.Write("Please enter row: ");
         Row = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine();
     }
 
-    private static void MakePlayerMove(ref char[,] Board, ref ShipType[] Ships)
+    private static void MakePlayerMove(ref char[,] Board, ref ShipType[] Ships)//exception if player enters <10 or 0<
     {
         int Row = 0;
         int Column = 0;
@@ -282,3 +282,13 @@ class Program
         }
     }
 }
+/*
+ * different sizes of boards
+ * rounds
+ * limited number of guesses
+ * difficulty levels
+ * 
+ * exceptions
+
+
+*/
